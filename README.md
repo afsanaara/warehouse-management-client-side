@@ -1,12 +1,13 @@
 # Project name : Go-Panda
 
-# Live site : 
+# Live site : https://go-panda-37deb.web.app/
+
 # About Project
 
 - This project is about Manage inventory items
 - It's contains collection of products
 - In this project we use CRUD operations
-- Home page contains a Banner,products, categories, recent post and a footer
+- Home page contains a Banner,Foods, categories, recent post and a footer
 - We use JWT authentication
 
 # Languages and technologies
