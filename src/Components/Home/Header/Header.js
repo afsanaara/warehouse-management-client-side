@@ -19,13 +19,13 @@ const Header = () => {
   <Navbar.Brand as={Link} to="/"> <span className="text-warning fw-bold">Go</span> Panda</Navbar.Brand> 
     <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-       <Nav.Link  className="text-white fw-bold" as={Link} to="/home">Home</Nav.Link>
-      <Nav.Link  className="text-white fw-bold" as={Link} to="/inventory">Inventory</Nav.Link>
-      <Nav.Link  className="text-white fw-bold" as={Link} to="/blogs">Blogs</Nav.Link>
+       <Nav.Link  className="text-black fw-bold" as={Link} to="/home">Home</Nav.Link>
+      <Nav.Link  className="text-black fw-bold" as={Link} to="/inventory">Inventory</Nav.Link>
+      <Nav.Link  className="text-black fw-bold" as={Link} to="/blogs">Blogs</Nav.Link>
               
               
               {
-                user ? <span className="text-white fw-bold  mt-1 mx-2 ">
+                user ? <span className="text-black fw-bold  mt-1 mx-2 ">
                   <NavDropdown className="text-white" title={user?.email} id="basic-nav-dropdown">
                     
                     <Nav.Link className="text-dark fw-bold" as={Link} to="/manageitems">Manage Items</Nav.Link>
