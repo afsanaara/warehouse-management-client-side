@@ -14,9 +14,9 @@ const Header = () => {
     return (
         <div>
            
-        <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" sticky="top" bg="light" variant="light">
   <Container>
-  <Navbar.Brand as={Link} to="/"> <span className="text-danger fw-bold">Go</span>Panda</Navbar.Brand> 
+  <Navbar.Brand as={Link} to="/"> <span className="text-warning fw-bold">Go</span> Panda</Navbar.Brand> 
     <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
        <Nav.Link  className="text-white fw-bold" as={Link} to="/home">Home</Nav.Link>
@@ -34,7 +34,7 @@ const Header = () => {
                 <button onClick={() => logout(auth)} className=" btn btn-link text-black fw-bold text-decoration-none">Sign Out</button>
              </NavDropdown>
                   
-                 {/* <img style={{width: '30%'}} className="rounded-circle img-thumbnail" src={user.photoURL} alt="" />  */}
+                 
                   
                   
                 </span>
