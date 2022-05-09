@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <div className="text-center text-black mt-5 fw-bold">
-        <p><small>Copyright &copy; {today.getFullYear()} Powersurge Supplements. All Rights Reserved</small></p>
+        <p><small>Copyright &copy; {today.getFullYear()} Go-Panda. All Rights Reserved</small></p>
       </div>
         </div>
     );

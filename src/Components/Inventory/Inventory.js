@@ -10,14 +10,14 @@ const Inventory = () => {
     const navigateToInventories = () => {
         navigate("/manageitems");
     }
-    // const { description, image, name, price, quantity, supplier, _id } = products;
+    
     const handleStock = (id) => {
         console.log(id);
         navigate(`/inventory/${id}`);
     }
     return (
         <div className="container mx-auto mt-5">
-            <h1 className="text-center text-black">Collection Of <span className="text-danger fw-bold">Products</span> </h1>
+            <h1 className="text-center text-black">Collection Of <span className="text-warning fw-bold">Foods</span> </h1>
             <div className="row mt-5">
                 {
                     products.map(product =><div className="container  gy-5 col-md--12 col-md-6 col-lg-4  text-center">
@@ -34,7 +34,7 @@ const Inventory = () => {
 </div>
         </div> )
                 }
-                 <button onClick={navigateToInventories} className="btn btn-secondary text-center w-25 mx-auto mt-5">Manage Inventory</button>
+                 <button onClick={navigateToInventories} className="btn btn-success text-center w-25 mx-auto mt-5">Manage Inventory</button>
             </div>
            
         </div>

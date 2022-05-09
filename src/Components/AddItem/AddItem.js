@@ -67,7 +67,7 @@ const AddItem = () => {
     <Form.Control as="textarea" type="text" name="description" placeholder="Short description" rows={3} />
   </Form.Group>
           
-  <Button variant="dark" type="submit">
+  <Button variant="secondary" type="submit">
     Add
           </Button>
         </Form>

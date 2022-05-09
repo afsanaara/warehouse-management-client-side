@@ -16,7 +16,7 @@ const Header = () => {
            
         <Navbar collapseOnSelect expand="lg" sticky="top" bg="light" variant="light">
   <Container>
-  <Navbar.Brand as={Link} to="/"> <span className="text-warning fw-bold">Go</span> Panda</Navbar.Brand> 
+  <Navbar.Brand as={Link} to="/"> <span className="text-warning fw-bold">Go</span>-Panda</Navbar.Brand> 
     <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
        <Nav.Link  className="text-black fw-bold" as={Link} to="/home">Home</Nav.Link>
@@ -38,7 +38,7 @@ const Header = () => {
                   
                   
                 </span>
-                   :  <Nav.Link className="text-white fw-bold" as={Link} to="/login">Login</Nav.Link>
+                   :  <Nav.Link className="text-black fw-bold" as={Link} to="/login">Login</Nav.Link>
               }
     </Nav>
             </Navbar.Collapse>
