@@ -29,7 +29,7 @@ const Inventory = () => {
                                 <h5 className="card-title">Quantity : {product.quantity}</h5>
                                 <h5 className="card-title">Supplier : {product.supplier}</h5>
     <p className="card-text">{product.description}</p>
-    <button onClick={()=>handleStock(product._id)} className="btn btn-dark">Update</button>
+    <button onClick={()=>handleStock(product._id)} className="btn btn-danger">Update</button>
   </div>
 </div>
         </div> )

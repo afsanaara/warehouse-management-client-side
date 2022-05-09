@@ -21,7 +21,7 @@ const InventoryDetails = () => {
     }, [product])
     
     const handleDelivery = () => {
-        console.log("clicked");
+        
         fetch(`http://localhost:5000/products/${inventoryId}`, {
   method: 'PUT',
   body: JSON.stringify({
@@ -67,7 +67,7 @@ return (
     <Card.Text>
       {product.description}
     </Card.Text>
-    <Button variant="dark" onClick={handleDelivery}>Delivered</Button>
+    <Button variant="warning" onClick={handleDelivery}>Delivered</Button>
                 </Card.Body>
                 <Form onSubmit={handleStock} >
                     <h5>Restock</h5>
@@ -77,7 +77,7 @@ return (
           </Form.Group>
 
           
-  <Button variant="dark" type="submit">
+  <Button variant="success" type="submit">
     Add Quantity 
           </Button>
             </Form>
