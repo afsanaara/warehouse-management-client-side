@@ -13,12 +13,10 @@ const Header = () => {
 };
     return (
         <div>
-           {/* <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
-    <Container>
-            <Navbar.Brand as={Link} to="/"> <span className="text-danger fw-bold">Powersurge</span> Supplements</Navbar.Brand> */}
+           
         <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
   <Container>
-  <Navbar.Brand as={Link} to="/"> <span className="text-danger fw-bold">Powersurge</span> Supplements</Navbar.Brand> 
+  <Navbar.Brand as={Link} to="/"> <span className="text-danger fw-bold">Go</span>Panda</Navbar.Brand> 
     <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
        <Nav.Link  className="text-white fw-bold" as={Link} to="/home">Home</Nav.Link>
