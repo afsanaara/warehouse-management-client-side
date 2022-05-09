@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import UseProducts from "../../Hooks/UseProducts/UseProducts";
+
 import Spinner from "../Spinner/Spinner";
 
 const Inventory = () => {
