@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import UseProducts from '../../Hooks/UseProducts/UseProducts';
+import Spinner from '../Spinner/Spinner';
 
 const Inventory = () => {
-    const [products, setProducts] = UseProducts([]);
+    const [products, setProducts] = useState([]);
+     const [isLoading, setIsLoading] = useState(false);
     console.log(products);
     const navigate = useNavigate();
 
+    useEffect(() => {
+        setIsLoading(true);
+        fetch('http://localhost:5000/products')
+            .then(response => response.json())
+            .then(data => {
+                setProducts(data.slice(0, 6),
+                setIsLoading(false)
+                )});
+    },[])
     const navigateToInventories = () => {
         navigate("/manageitems");
     }
@@ -19,7 +30,7 @@ const Inventory = () => {
         <div className="container mx-auto mt-5">
             <h1 className="text-center text-black">Collection Of <span className="text-warning fw-bold">Foods</span> </h1>
             <div className="row mt-5">
-                {
+                { isLoading ? <Spinner></Spinner> :
                     products.map(product =><div className="container  gy-5 col-md--12 col-md-6 col-lg-4  text-center">
             <div className="card" style={{width: "18rem"}}>
   <img className="card-img-top" src={product.image} alt=""/>
